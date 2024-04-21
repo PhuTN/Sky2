@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- ImageView cho biểu tượng của trang web -->
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/rounded_bg"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"/>
+
+    <!-- TextView cho tiêu đề của trang -->
+    <LinearLayout
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <TextView
+            android:id="@+id/text_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="Page Title"
+            android:textSize="16sp" />
+
+        <!-- TextView cho URL của trang -->
+        <TextView
+            android:id="@+id/text_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="example.com"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewCancel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        app:srcCompat="@drawable/ic_cancel" />
+</LinearLayout>
